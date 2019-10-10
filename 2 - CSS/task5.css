@@ -1,0 +1,14 @@
+h1{
+
+    color: blue;
+}
+
+
+.myul li a{
+ text-decoration: none;
+}
+
+.myul li a:hover{
+    
+    background-color: yellow;
+}
