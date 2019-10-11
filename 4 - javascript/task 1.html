@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+</head>
+
+<body>
+
+
+    <form name="myForm" onsubmit="return (validate());">
+
+
+        <table border="1">
+
+            <tr>
+                <td>
+                   First Name
+                </td>
+                <td>
+                    <input type="text" name="firstName" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Last Name
+                </td>
+                <td>
+                    <input type="text" name="lastName" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Age 
+                </td>
+                <td>
+                    <input type="text" name="age" />
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td>
+                    Weight
+                </td>
+                <td>
+                    <input type="text" name="weight" />
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button style="display:block;margin:auto;" value="button" name="myButton">Submit</button>
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+    
+
+
+
+
+
+
+
+
+    <script>
+        
+
+        function validate() {
+            firstName = document.myForm.firstName.value;
+            lastName = document.myForm.lastName.value;
+            age = document.myForm.age.value;
+           weight = document.myForm.weight.value;
+
+            if (age < 17) {
+                alert("age should be greater than 17");
+            }
+
+            if(weight>300 || weight <80){
+                alert("Invalid weight");
+            }
+
+            
+
+
+
+        }
+
+
+    </script>
+
+</body>
+</html>
