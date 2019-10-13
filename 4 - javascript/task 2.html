@@ -16,11 +16,19 @@
       height: 50%;
       top: 25%;
       margin: 0 auto;
-      position: relative;
+      position: relative;   
       background:orange;
     }
       input:focus {
   background-color: yellow;
+      }
+
+      input{
+        width: 100% ;
+      }
+
+      .heading1{
+        text-align: center;
       }
 </style>
 
@@ -32,16 +40,22 @@
 <div class="main">
 
 <div class="formdiv">
+  <h1 class="heading1"> Shipment Form</h1>
 
     <form action="/action_page.php">
   
-  <input placeholder="Firstname" type="text" name="firstname" required><br>
+  <input placeholder="Firstname" type="text" name="firstname" required>
+  <br>
+  <br>
+  <br>
   
   <input placeholder="LastName" type="text" name="lastname" required><br>
-
+      <br>
+      <br>
   <input placeholder="Address" type="text" name="lastname" required><br>
 
-    
+    <br>
+    <br>
 
   <input type="submit" value="Submit">
 </form>
