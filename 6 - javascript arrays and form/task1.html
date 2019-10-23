@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    
+
+    <table id="mytable" border="1">
+        
+
+    </table>
+
+
+
+
+
+
+    <script>
+
+        Person = ["imran", 23, "xyz@gmail.com"];
+        course = ["data structures", 2016, "semester 7th"];
+
+        Person.push(course);
+
+
+        for (var i = 0; i < Person.length; i++) {
+
+            document.getElementById("mytable").innerHTML += "<tr><td>" + Person[i] + "</td></tr>";
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

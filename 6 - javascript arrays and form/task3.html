@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+
+
+    <button id="mybutton" onclick="myFunctionSort()">Sort</button>
+    <button id="mybutton" onclick="myFunctionSplice()">Splice</button>
+    <button id="mybutton" onclick="myFunctionSlice()">Slice</button>
+    <button id="mybutton" onclick="myFunctionPush()">Push</button>
+    <button id="mybutton" onclick="myFunctionPop()">Pop</button>
+
+
+
+
+    <script>
+
+        mylist = [676,135,374,843,125];
+
+
+
+        function myFunctionSort() {
+
+            newlist = mylist.sort();
+           document.write(newlist);
+        }
+
+        function myFunctionSplice() {
+
+            mylist.splice(2,0,"mango");
+            document.write(mylist);
+        }
+
+        function myFunctionSlice() {
+            newlist = mylist.slice(0, 3);
+            document.write(newlist);
+        }
+
+        function myFunctionPush() {
+            mylist.push("new element pushed");
+            document.write(mylist);
+
+        }
+
+
+        function myFunctionPop() {
+            mylist.pop();
+            document.write(mylist);
+        }
+
+
+
+    </script>
+</body>
+</html>

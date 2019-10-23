@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+
+    <input type="text" name="text2" required id="text2"/>
+
+  
+
+    <button onclick="Palindrome(document.getElementById('text2').value)">Check</button>
+    <script>
+
+        function Palindrome(text2) {
+
+            var pal = "";
+
+
+            for (var i = text2.length-1; i >= 0; i--) {
+
+                pal += text2[i];
+
+
+            }
+
+          
+            
+
+            if (text2 == pal) {
+                alert("yes they are palindrome")
+            }
+
+            else {
+
+                alert("not a palindrome")
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

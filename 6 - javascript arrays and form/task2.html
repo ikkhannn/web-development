@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <input type="text" id="text1" required name="text1" />
+
+
+    <button name="mybutton" onclick="mySort(document.getElementById('text1').value)">Sort</button>
+
+
+
+
+
+
+    <script>
+
+        function mySort(text) {
+
+            var myarray = [];
+
+            for (var i = 0; i < text.length; i++) {
+                myarray.push(text[i])
+            }
+
+
+
+            myarray.sort();
+
+            alert(myarray+text);
+            text = "";
+            for (var h = 0; h < myarray.length; h++) {
+                text += myarray[h];
+            }
+
+            alert(text);
+
+        }
+
+    </script>
+</body>
+</html>
