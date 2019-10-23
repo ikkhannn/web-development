@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <div class="main">
+        <p>
+            <input placeholder="enter number to round off" type="text" id="num1" name="num1" />
+
+
+
+            <button id="integer" onclick="roundToInteger(document.getElementById('num1').value)">Round to integer</button>
+            <button id="tenths" onclick="roundToTenths(document.getElementById('num1').value)">round to tenths</button>
+            <button id="hundredths" onclick="roundToHundredths(document.getElementById('num1').value)">round to hundreths</button>
+            <button id="thousandths" onclick="roundToThousandths(document.getElementById('num1').value)">Round to thousandths</button>
+
+
+        </p>
+    </div>
+
+
+    <script>
+        function roundToInteger(num1) {
+            num1 = parseFloat(num1);
+
+            result = Math.floor(num1);
+
+            document.getElementById('num1').value = result;
+        }
+
+
+        function roundToTenths(num1) {
+            num1 = parseFloat(num1);
+
+            result = Math.floor(num1 * 10 + .5) / 10;
+
+            document.getElementById('num1').value = result;
+        }
+
+
+        function roundToHundredths(num1) {
+            num1 = parseFloat(num1);
+
+            result = Math.floor(num1 * 100 + .5) / 100;
+
+            document.getElementById('num1').value = result;
+        }
+
+        function roundToThousandths(num1) {
+            num1 = parseFloat(num1);
+
+            result = Math.floor(num1 * 1000 + .5) / 1000;
+
+            document.getElementById('num1').value = result;
+        }
+
+    </script>
+
+</body>
+</html>

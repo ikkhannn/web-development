@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    
+    <div class="main">
+        <input placeholder="enter number 1" type="text" id="num1" name="num1" />
+
+
+        <input placeholder="enter number 2" type="text" id="num2" name="num2" />
+
+
+        <input placeholder="Result" type="text" id="result" name="result" readonly />
+
+
+        <p>
+
+            <button id="divide" name="divide" onclick="divide(document.getElementById('num1').value, document.getElementById('num2').value)">Divide</button>
+        </p>
+
+        <p>
+
+            <button id="multiply" name="multiply" onclick="multiply(document.getElementById('num1').value, document.getElementById('num2').value)">Multiply</button>
+        </p>
+
+        <p>
+
+            <button id="add" name="add" onclick="add(document.getElementById('num1').value, document.getElementById('num2').value)">Add</button>
+        </p>
+
+        <p>
+
+            <button id="subtract" name="subtract" onclick="subtract(document.getElementById('num1').value, document.getElementById('num2').value)">Subtract</button>
+            
+        </p>
+
+        <p>
+
+            <button id="sqroot" name="sqroot" onclick="squareRoot(document.getElementById('num1').value)">squareroot</button>
+
+        </p>
+
+        <p>
+
+            <button id="log" name="log" onclick="log(document.getElementById('num1').value)">Log</button>
+
+        </p>
+        <p>
+
+            <button id="power" name="power" onclick="power(document.getElementById('num1').value,document.getElementById('num2').value)">power</button>
+
+        </p>
+        <p>
+
+            <button id="sin" name="sin" onclick="sin(document.getElementById('num1').value)">sin</button>
+
+        </p>
+        <p>
+
+            <button id="cos" name="cos" onclick="cos(document.getElementById('num1').value)">cos</button>
+
+        </p>
+        <p>
+
+            <button id="tan" name="tan" onclick="tan(document.getElementById('num1').value)">tan</button>
+
+        </p>
+
+    </div>
+
+    <script>
+
+
+        function log(num1) {
+
+            num1 = parseFloat(num1);
+            
+            var result = Math.log(num1);
+            document.getElementById('result').value = result;
+
+
+        }
+
+        function power(num1,num2) {
+
+            num1 = parseFloat(num1);
+            var result = Math.pow(num1,num2);
+            document.getElementById('result').value = result;
+
+
+        }
+
+        function sin(num1) {
+
+            num1 = parseFloat(num1);
+            num1 = num1 / 57.28;
+            var result = Math.sin(num1);
+            document.getElementById('result').value = result;
+
+
+        }
+
+        function cos(num1) {
+
+            num1 = parseFloat(num1);
+            num1 = num1 / 57.28;
+            var result = Math.cos(nrum1);
+            document.getElementById('result').value = result;
+
+
+        }
+
+        function tan(num1) {
+
+            num1 = parseFloat(num1);
+            num1 = num1 / 57.28;
+            var result = Math.tan(num1);
+            document.getElementById('result').value = result;
+
+
+        }
+
+
+
+
+
+        function squareRoot(num1){
+
+            num1 = parseInt(num1);
+            var result = Math.sqrt(num1);
+            document.getElementById('result').value = result;
+
+            
+        }
+
+        function divide(num1, num2) {
+
+            
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            var res = num1 / num2;
+
+            document.getElementById('result').value = res;
+
+
+        }
+
+
+        function multiply(num1, num2) {
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            var res = num1 * num2;
+
+            document.getElementById('result').value = res;
+
+        }
+
+
+        function add(num1, num2) {
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            var res = num1 + num2;
+
+            document.getElementById('result').value = res;
+
+        }
+
+
+        function subtract(num1, num2) {
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            var res = num1 - num2;
+
+            document.getElementById('result').value = res;
+
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>

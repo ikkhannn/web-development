@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input type="text" id="string1" placeholder="string 1"/>
+
+
+
+    <input type="text" id="string2" placeholder="string 2" />
+
+
+    <input type="text" id="result" placeholder="result" />
+
+    <button onclick="compare(document.getElementById('string1').value,document.getElementById('string2').value)">Compare</button>
+
+    <script>
+
+        function compare(string1, string2) {
+
+            if (string1.length < string2.length) {
+
+                document.getElementById('result').value = "String 1 is smaller than string 2";
+
+            }
+            else if (string1.length > string2.length)
+
+            {
+
+                document.getElementById('result').value = "string 2 is smaller than string 1 ";
+            }
+
+            else {
+                document.getElementById('result').value = "Both are equal ";
+            }
+
+        }
+
+    </script>
+
+
+
+</body>
+</html>
