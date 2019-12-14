@@ -5,15 +5,48 @@
 	<meta charset="utf-8" />
 
     
-    <link href="http://localhost:11710/Scripts/jquery-ui.css" rel="stylesheet" />
+    <link href="Scripts/jquery-ui.css" rel="stylesheet" />
 
-    <script src="http://localhost:11710/Scripts/jquery.min.js"></script>
+    <script src="Scripts/jquery.min.js"></script>
 
-    <script src="http://localhost:11710/Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
 
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script>
+
+$(function() {
+            var availableTags = [
+               "ActionScript",
+               "AppleScript",
+               "Asp",
+               "BASIC",
+               "C",
+               "C++",
+               "Clojure",
+               "COBOL",
+               "ColdFusion",
+               "Erlang",
+               "Fortran",
+               "Groovy",
+               "Haskell",
+               "Java",
+               "JavaScript",
+               "Lisp",
+               "Perl",
+               "PHP",
+               "Python",
+               "Ruby",
+               "Scala",
+               "Scheme"
+            ];
+
+            $( "#tags" ).autocomplete({
+               source: availableTags
+            });
+
+         });
+
          $(function() {
             var availableTags = [
               "Pakistan","Srilanka","Malaysia","Russia"
@@ -162,6 +195,7 @@
         <label for="tags">Tags: </label>
         <input id="tags">
     </div>
+
 
     <div id="slider"></div>
 
