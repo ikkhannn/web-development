@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    
+    <link href="http://localhost:11710/Scripts/jquery-ui.css" rel="stylesheet" />
+
+    <script src="http://localhost:11710/Scripts/jquery.min.js"></script>
+
+    <script src="http://localhost:11710/Scripts/jquery-ui.min.js"></script>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script>
+         $(function() {
+            var availableTags = [
+              "Pakistan","Srilanka","Malaysia","Russia"
+            ];
+
+            
+            $( "#autocomplete" ).autocomplete({
+               source: availableTags
+            });
+
+         });
+
+         $(function () {
+             var availableEmail = [
+                     "@gmail.com", "@yahoo.com", "@hotmail.com"
+             ];
+
+
+             $("#emailcomplete").autocomplete({
+                 source: availableEmail
+             });
+
+         });
+        
+            
+         
+
+         $(function () {
+             $("#slider").slider();
+         });
+
+         $(function () {
+             $("#accordion").accordion();
+         });
+
+
+    </script>
+
+</head>
+<body>
+
+    <div id="accordion">
+        <h3>Student registeration form</h3>
+
+        <form>
+            <div class="row">
+                <div class="form-group">
+                    <label>Full name</label><br />
+                    <input class="form-control" type="text" name="fullname" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Email</label><br />
+                    <input class="form-control"  type="email" id="emailcomplete" name="email" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Country</label><br />
+                    <input class="form-control"  type="text" name="country" id="autocomplete"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>City</label><br />
+                    <input  class="form-control" type="text" name="city" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Username</label><br />
+                    <input class="form-control"  type="text" name="username" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Password</label><br />
+                    <input class="form-control"  type="password" name="password" />
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+        <h3>CSS</h3>
+
+        <div>
+            <p>
+                CSS is the acronym for "Cascading Style Sheet". This
+                tutorial covers both the versions CSS1,CSS2 and CSS3,
+                and gives a complete understanding of CSS,
+                starting from its basics to advanced concepts.
+            </p>
+        </div>
+
+        <h3>AngularJS</h3>
+
+        <div>
+            <p>
+                AngularJS is a very powerful JavaScript library. It is used in
+                Single Page Application (SPA) projects. It extends HTML DOM
+                with additional attributes and makes it more responsive to
+                user actions. AngularJS is open source, completely free,
+                and used by thousands of developers around the world.
+                It is licensed under the Apache license version 2.0.
+            </p>
+
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+
+        </div>
+
+        <h3>PHP</h3>
+
+        <div>
+            <p>
+                The PHP Hypertext Preprocessor (PHP) is a programming language
+                hat allows web developers to create dynamic content that
+                interacts with databases. PHP is basically used for developing
+                web based software applications. This tutorial helps you to
+                build your base with PHP.
+            </p>
+
+            <p>
+                Before proceeding with this tutorial you should have at least basic
+                understanding of computer programming, Internet, Database, and
+                MySQL etc is very helpful.
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+    </div>
+
+    <div id="slider"></div>
+
+
+
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/bootstrap.js"></script>
+
+
+</body>
+</html>
