@@ -1,0 +1,33 @@
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\ApplicationInsights.config
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\csc.exe
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\System.Collections.Immutable.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\System.Reflection.Metadata.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\vbc.exe
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\VBCSCompiler.exe
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\roslyn\VBCSCompiler.exe.config
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Rent a car website.dll.config
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Rent a car website.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Rent a car website.pdb
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.Agent.Intercept.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.DependencyCollector.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.Web.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.WindowsServer.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.ApplicationInsights.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.DependencyCollector.xml
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.Web.xml
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.AI.WindowsServer.xml
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.ApplicationInsights.xml
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\obj\Debug\Rent a car website.csprojResolveAssemblyReference.cache
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\obj\Debug\Rent a car website.dll
+H:\uni\7th semester\web engineering\lab\Rent a car website\Rent a car website\obj\Debug\Rent a car website.pdb
