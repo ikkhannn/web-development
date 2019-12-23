@@ -27,9 +27,9 @@ namespace Rent_a_car_website
             String pwdConf = Convert.ToString(password_confirmation.Value);
 
 
-            string script = string.Format("alert('{0}');", fname+lname+em+pwd+pwdConf);
+            //string script = string.Format("alert('{0}');", fname+lname+em+pwd+pwdConf);
 
-            Page page = HttpContext.Current.CurrentHandler as Page;
+            //Page page = HttpContext.Current.CurrentHandler as Page;
 
 
             //if (page != null && !page.ClientScript.IsClientScriptBlockRegistered("alert"))
@@ -37,19 +37,22 @@ namespace Rent_a_car_website
             //    page.ClientScript.RegisterClientScriptBlock(page.GetType(), "alert", script, true /* addScriptTags */);
             //}
 
-            if (!File.Exists("F:\\Test.xml"))
+            if (!File.Exists("F:\\Users.xml"))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
                 xmlWriterSettings.Indent = true;
                 xmlWriterSettings.NewLineOnAttributes = true;
-                using (XmlWriter xmlWriter = XmlWriter.Create("F:\\Test.xml", xmlWriterSettings))
+                using (XmlWriter xmlWriter = XmlWriter.Create("F:\\Users.xml", xmlWriterSettings))
                 {
                     xmlWriter.WriteStartDocument();
-                    xmlWriter.WriteStartElement("School");
+                    xmlWriter.WriteStartElement("Users");
 
-                    xmlWriter.WriteStartElement("Student");
+                    xmlWriter.WriteStartElement("Record");
                     xmlWriter.WriteElementString("FirstName", fname);
                     xmlWriter.WriteElementString("LastName", lname);
+                    xmlWriter.WriteElementString("Email", em);
+                    xmlWriter.WriteElementString("Password", pwd);
+                    
                     xmlWriter.WriteEndElement();
 
                     xmlWriter.WriteEndElement();
@@ -60,14 +63,17 @@ namespace Rent_a_car_website
             }
             else
             {
-                XDocument xDocument = XDocument.Load("F:\\Test.xml");
-                XElement root = xDocument.Element("School");
-                IEnumerable<XElement> rows = root.Descendants("Student");
+                XDocument xDocument = XDocument.Load("F:\\Users.xml");
+                XElement root = xDocument.Element("Users");    
+                IEnumerable<XElement> rows = root.Descendants("Record");
                 XElement firstRow = rows.First();
                 firstRow.AddBeforeSelf(
-                   new XElement("Student",
+                   new XElement("Record",
                    new XElement("FirstName", fname),
-                   new XElement("LastName", lname)));
+                   new XElement("LastName", lname),
+                   new XElement("Email", em),
+                   
+                   new XElement("Password", pwd)));
                 xDocument.Save("F:\\Test.xml");
             }
 

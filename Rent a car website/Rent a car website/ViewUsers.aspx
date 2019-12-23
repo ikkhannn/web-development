@@ -47,32 +47,21 @@
       <div class="container">
         <h2>Registered Users</h2>
         <p>Following is the list of registered users:</p>            
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>Moe</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>Dooley</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
+        
+          <form runat="server">
+
+
+
+              <asp:GridView ID="GridView1" Width="600" runat="server">
+
+
+
+
+              </asp:GridView>
+              <asp:Button class="btn btn-lg btn-success" ID="Button1" runat="server" Text="View Users" OnClick="Button1_Click" />
+          </form>
+
+
       </div>
 
 

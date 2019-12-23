@@ -49,44 +49,46 @@
                     <h3 class="panel-title">Add car <small>It's free!</small></h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form role="form" runat="server">
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="Title" id="Title" class="form-control input-sm" placeholder="Title">
+                                    <input runat="server" required type="text" name="Title" id="Title" class="form-control input-sm" placeholder="Title"/>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="Carname" id="Carname" class="form-control input-sm" placeholder="Car name">
+                                    <input runat="server" type="text" required name="Carname" id="Carname" class="form-control input-sm" placeholder="Car name"/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="model" id="model" class="form-control input-sm" placeholder="Model">
+                            <input runat="server" type="text" required name="model" id="model" class="form-control input-sm" placeholder="Model"/>
                         </div>
 
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="Year" id="Year" class="form-control input-sm" placeholder="Year">
+                                    <input runat="server" type="text" required name="Year" id="Year" class="form-control input-sm" placeholder="Year"/>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <select title="Pick a number" class="form-control">
+                                    <select runat="server" name="city" id="city" title="Pick a number" class="form-control">
                                         <option>Select...</option>
                                         <option>Karachi</option>
                                         <option>Lahore</option>
                                         <option>islamabad</option>
                                     </select>
+
+                                    
                                 </div>
                             </div>
                         </div>
 
-                        <input type="submit" value="Register" class="btn btn-info btn-block">
-
+                        
+                        <asp:Button ID="AddCar" class="btn btn-info btn-block" runat="server" Text="Add car" OnClick="AddCar_Click" />
                     </form>
                 </div>
             </div>

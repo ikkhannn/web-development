@@ -46,32 +46,17 @@
       <div class="container">
         <h2>Cars for rent</h2>
         <p>The following cars are available for rent:</p>            
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>Moe</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>Dooley</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
+       
+          <form runat="server">
+          <asp:GridView ID="GridView1" Width="600" runat="server">
+
+
+            
+          </asp:GridView>
+          
+          <asp:Button ID="Button1" class="btn btn-lg btn-success" runat="server" Text="View Users" OnClick="Button1_Click" />
+
+              </form>
       </div>
 
 

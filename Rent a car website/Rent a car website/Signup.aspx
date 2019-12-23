@@ -84,7 +84,7 @@
                         </div>
                         
                        
-                        <asp:Button class="btn btn-info btn-block" ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+                        <asp:Button class="btn btn-info btn-block" ID="Button1" runat="server" Text="Signup" OnClick="Button1_Click" />
                     </form>
                 </div>
             </div>
