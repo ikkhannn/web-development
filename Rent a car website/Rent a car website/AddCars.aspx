@@ -46,7 +46,7 @@
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Add car <small>It's free!</small></h3>
+                    <h3 class="panel-title">Add car </h3>
                 </div>
                 <div class="panel-body">
                     <form role="form" runat="server">
@@ -94,7 +94,6 @@
             </div>
         </div>
     </div>  
-
     <script src="scripts/js/jquery.js"></script>
    
     <script src="scripts/js/bootstrap.js"></script>

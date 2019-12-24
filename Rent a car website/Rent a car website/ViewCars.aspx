@@ -54,7 +54,7 @@
             
           </asp:GridView>
           
-          <asp:Button ID="Button1" class="btn btn-lg btn-success" runat="server" Text="View Users" OnClick="Button1_Click" />
+          <asp:Button ID="Button1" class="btn btn-lg btn-success" runat="server" Text="View Cars" OnClick="Button1_Click" />
 
               </form>
       </div>
